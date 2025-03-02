@@ -3,6 +3,7 @@ import autoprefixer from 'autoprefixer'
 import path from 'node:path'
 import tailwind from 'tailwindcss'
 import { defineConfig } from 'vite'
+import Components from 'unplugin-vue-components/vite'
 
 export default defineConfig({
   css: {
@@ -10,7 +11,7 @@ export default defineConfig({
       plugins: [tailwind(), autoprefixer()],
     },
   },
-  plugins: [vue()],
+  plugins: [vue(), Components()],
   resolve: {
     alias: {
       '@': path.resolve(__dirname, './src')
