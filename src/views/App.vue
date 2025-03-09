@@ -107,7 +107,7 @@ onMounted(async () => {
     <div class="flex justify-center items-center w-full">
         <div class="flex flex-col items-center justify-center">
 
-            <h2 class="text-white">WebRTC Audio Stream</h2>
+            <h2 class="text-white">Audio Stream</h2>
             <div class="flex items-center gap-3">
 
                 <input type="range" v-model="volume" min="0" max="1" step="0.01">
